@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layouts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .layout1 {
+            background-color: pink;
+        }
+        .layout2 {
+            background-color: lightgreen;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .asidebar1, .main-content-section, .left-main-content, .aside1, .aside2 {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .asidebar1 {
+            flex: 1;
+        }
+        .main-content-section {
+            flex: 2;
+        }
+        .left-main-content {
+            flex: 2;
+        }
+        .aside2, .aside1 {
+            flex: 1;
+        }
+        .aside-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container layout1">
+        <div class="header">Header</div>
+        <div class="main-content">
+            <div class="asidebar1">Asidebar1</div>
+            <div class="main-content-section">Main content</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <div class="container layout2">
+        <div class="header">Header</div>
+        <div class="main-content">
+            <div class="left-main-content">Left Main Content</div>
+            <div class="aside-container">
+                <div class="aside2">Aside2</div>
+                <div class="aside1">Aside1</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

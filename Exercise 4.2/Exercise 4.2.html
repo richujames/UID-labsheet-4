@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Layout</title>
+  <style>
+    .header {
+      display: flex;
+      margin-right: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      width: 97vw;
+      padding: 10px;
+      background-color: #06c80c;
+      color: rgb(58, 58, 58);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo {
+      flex: 1;
+    }
+    .navigation {
+      flex: 2;
+      text-align: center;
+    }
+    .search {
+      flex: 1;
+      text-align: right;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Logo</div>
+    <div class="navigation">Navigation </div>
+    <div class="search">Search Bar <textarea name="search" id="1"></textarea></div>
+  </header>
+</body>
+</html>
